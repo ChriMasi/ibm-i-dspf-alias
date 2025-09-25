@@ -1,0 +1,51 @@
+{
+  "name": "dspf-alias-definition-provider",
+  "displayName": "DSPF Alias Definition Navigator",
+  "description": "Definition provider for IBM i DSPF alias declarations and usages.",
+  "displayName.it": "Navigatore Alias DSPF",
+  "displayName.it-IT": "Navigatore Alias DSPF",
+  "description.it": "Fornisce la navigazione tra dichiarazioni e utilizzi di alias nei display file IBM i (AS/400) con estensione .dspf.",
+  "description.it-IT": "Fornisce la navigazione tra dichiarazioni e utilizzi di alias nei display file IBM i (AS/400) con estensione .dspf.",
+  "version": "0.0.1",
+  "publisher": "Chri-Masi",
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:dds.dspf"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "dds.dspf",
+        "aliases": [
+          "DDS DSPF",
+          "dspf"
+        ],
+        "extensions": [
+          ".dspf"
+        ]
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -w -p ./",
+    "prepare": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChriMasi/ibm-i-dspf-alias"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.19.0",
+    "@types/vscode": "^1.93.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.5"
+  }
+}

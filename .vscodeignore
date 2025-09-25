@@ -1,0 +1,9 @@
+out/test/
+src/
+node_modules/
+.vscode/
+.gitignore
+.vscodeignore
+README.md
+**/*.map
+*.dspf
